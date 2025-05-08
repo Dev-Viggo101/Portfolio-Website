@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    border-radius: 40% 60% 37% 63% / 61% 39% 61% 39% ;
+    box-shadow: 0 2px 8px purple;
+}
+
+span{
+    border-radius: 13% 87% 20% 80% / 77% 15% 85% 23%;
+}
+
+button{
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    height: 45px;
+    color: white;
+    transition: .3s ease-in-out;
+    font-size: 20px;
+}
+
+button:hover{
+    transform: scale(90%);
+    background-color: blueviolet;
+}
+
+#linkedinDiv:hover{
+    transform: scale(95%);
+    cursor: pointer;
+}
+
+#instagramDiv:hover{
+    transform: scale(95%);
+    cursor: pointer;
+}
+
+#githubDiv:hover{
+    transform: scale(95%);
+    cursor: pointer;
+}
+
+#viggoImage{
+    height: 450px;
+    width: 400px;
+}
+
+#toggleButton{
+    border-radius: 2000px;
+    width: 50px;
+    margin-top: 6px;
+}
