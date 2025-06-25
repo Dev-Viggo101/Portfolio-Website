@@ -1,20 +1,26 @@
 import { useState } from "react";
 
-const yearData = [
-  {
-    title: "2023 - FIRST YEAR",
-    text: `During the first year of my studies, I embraced university life with an open mind and a strong determination to succeed. While university is a time filled with new experiences, I remained deeply committed to my academic goals. I understood early on that success would require balance.
+const divs = [
+  <div className='text-center p-4 rounded-xl shadow-black shadow-md bg-white dark:bg-gray-400 dark:shadow-white'>
+    <h2 className="text-lg font-semibold">2023 - FIRST YEAR</h2>
+    <p className="mt-2 text-sm md:text-base">
+      During the first year of my studies, I embraced university life with an open mind and a strong determination to succeed. While university is a time filled with new experiences, I remained deeply committed to my academic goals. I understood early on that success would require balance.
 
-    Despite the excitement and adjustments that come with transitioning into higher education, I maintained a high level of discipline in my studies. As a result, I achieved an exceptional academic record, earning distinctions in all 15 of my modules and earning myself in the top three across all campuses.`
-  },
-  {
-    title: "2024 - SECOND YEAR",
-    text: `In the second year, the curriculum became more specialized and intellectually demanding, with a greater focus on our chosen areas of study. Despite these increased challenges, I remained committed to excellence and continued to rank in the top three across campuses. This experience taught me how to adapt quickly, embrace complexity, and maintain high standards even under pressure.`
-  },
-  {
-    title: "2025 - THIRD YEAR",
-    text: `Now in the third and final year of my studies, I have completed the first semester with a deeper understanding of programming principles and development practices. This phase of my academic journey has been particularly enriching, as it has equipped me with both theoretical insight and practical skills essential to the world of software development.`
-  }
+      Despite the excitement and adjustments that come with transitioning into higher education, I maintained a high level of discipline in my studies. As a result, I achieved an exceptional academic record, earning distinctions in all 15 of my modules and earning myself in the top three across all campuses. 
+    </p>
+  </div>,
+  <div className='text-center p-4 rounded-xl shadow-black shadow-md bg-white dark:bg-gray-400 dark:shadow-white'>
+    <h2 className="text-lg font-semibold">2024 - SECOND YEAR</h2>
+    <p className="mt-2 text-sm md:text-base">
+      In the second year, the curriculum became more specialized and intellectually demanding, with a greater focus on our chosen areas of study. Despite these increased challenges, I remained committed to excellence and continued to rank in the top three across campuses. This experience taught me how to adapt quickly, embrace complexity, and maintain high standards even under pressure.
+    </p>
+  </div>,
+  <div className='text-center p-4 rounded-xl shadow-black shadow-md bg-white dark:bg-gray-400 dark:shadow-white'>
+    <h2 className="text-lg font-semibold">2025 - THIRD YEAR</h2>
+    <p className="mt-2 text-sm md:text-base">
+      Now in the third and final year of my studies, I have completed the first semester with a deeper understanding of programming principles and development practices. This phase of my academic journey has been particularly enriching, as it has equipped me with both theoretical insight and practical skills essential to the world of software development.
+    </p>
+  </div>,
 ];
 
 const listItems = [
@@ -45,13 +51,12 @@ function Education() {
 
       {/* Right Column - Year Info & Buttons */}
       <div className="flex flex-col items-center">
-        <div className="w-full max-w-md text-center p-4 rounded-xl shadow-black shadow-md bg-white dark:bg-gray-400 dark:shadow-white">
-          <h2 className="text-lg font-semibold">{yearData[index].title}</h2>
-          <p className="mt-2 text-sm md:text-base whitespace-pre-line">{yearData[index].text}</p>
+        <div className="w-full max-w-md h-[400px] overflow-y-auto">
+          {divs[index]}
         </div>
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          {yearData.map((_, i) => (
+          {divs.map((_, i) => (
             <button
               key={i}
               className={`bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 text-xl transition ${
