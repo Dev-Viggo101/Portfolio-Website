@@ -4,8 +4,6 @@ const divs = [
   <div className='text-center p-4 rounded-xl shadow-black shadow-md bg-white dark:bg-gray-400 dark:shadow-white'>
     <h2 className="text-lg font-semibold">2023 - FIRST YEAR</h2>
     <p className="mt-2 text-sm md:text-base">
-      During the first year of my studies, I embraced university life with an open mind and a strong determination to succeed. While university is a time filled with new experiences, I remained deeply committed to my academic goals. I understood early on that success would require balance.
-
       Despite the excitement and adjustments that come with transitioning into higher education, I maintained a high level of discipline in my studies. As a result, I achieved an exceptional academic record, earning distinctions in all 15 of my modules and earning myself in the top three across all campuses. 
     </p>
   </div>,
